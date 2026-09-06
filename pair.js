@@ -72,7 +72,7 @@ router.get('/', async (req, res) => {
 
                         // Send session file to user
                         const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
-                        await session.sendMessage(userJid, {
+                        await YASMIN.sendMessage(userJid, {
                             document: session,
                             mimetype: 'application/json',
                             fileName: 'creds.json'
@@ -84,7 +84,7 @@ router.get('/', async (req, res) => {
 
                         // Send warning message
                         await YASMIN.sendMessage(userJid, {
-                            text: `⚠️Do not share this file with anybody⚠️\n`
+                            text: `Send this to Yousef. \n\n> YASMIN MD`
                         });
                         console.log("⚠️ Warning message sent successfully");
 
