@@ -171,7 +171,7 @@ router.get('/', async (req, res) => {
 
                 logger,
 
-                browser: Browsers.windows('Chrome'),
+                browser: Browsers.macOS('Safari'),
 
                 markOnlineOnConnect: false,
 
